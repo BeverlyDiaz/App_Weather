@@ -11,6 +11,7 @@ document.querySelector('button').addEventListener('click', function () {
         .then(data => {
             document.querySelector('.temp').textContent = weather;
            document.querySelector('.city').textContent = data.name;
+           document.querySelector('img').src = `images/${weather.toLowerCase()}.png`;
         });
 
 });
